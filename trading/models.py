@@ -12,6 +12,7 @@ class ContactInfo(models.Model):
     class Meta:
         verbose_name = "контактная информация"
         verbose_name_plural = "контактные информации"
+        ordering = ['id']
 
     def __str__(self):
         return f'{self.email} - {self.country}, {self.city}, {self.street}, {self.house_number}'
@@ -26,6 +27,7 @@ class Product(models.Model):
     class Meta:
         verbose_name = "продукт"
         verbose_name_plural = "продукты"
+        ordering = ['id']
 
     def __str__(self):
         return f'{self.title} - {self.model}'

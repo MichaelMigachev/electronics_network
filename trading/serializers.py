@@ -1,4 +1,5 @@
 from rest_framework.serializers import ModelSerializer
+from rest_framework import serializers
 
 from trading.models import ContactInfo, Product, Vendor
 from trading.validators import validate_hierarchy
