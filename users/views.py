@@ -8,8 +8,8 @@ class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
 
     def get_permissions(self):
-        if self.action == 'create':
-            return [permissions.AllowAny()]  # Кто угодно может зарегистрироваться
+        if self.action == "create":
+            return [permissions.AllowAny()]  # любой регистрируется
         return [permissions.IsAdminUser()]  # Только админы — всё остальное
 
     def perform_create(self, serializer):
