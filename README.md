@@ -56,4 +56,14 @@ python manage.py runserver
 
 Swagger: http://localhost:8000/swagger/ Redoc: http://localhost:8000/redoc/
 
+### Запуск через Docker Compose:
+#### Для запуска всех сервисов выполните команду:
+docker-compose up --build
+
+#### Для запуска в фоновом режиме:
+docker-compose up -d
+
+#### После запуска доступность сервисов можно проверить командой:
+docker-compose ps
+
 ### Автор проекта Михаил Мигачев
